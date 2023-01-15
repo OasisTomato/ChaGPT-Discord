@@ -80,7 +80,7 @@ async def on_message(message):
                 await message.channel.send(line)
         await loading_message.delete()
 
-    elif message.content.startswith("!cc"):
+    elif message.content.startswith("!creativecode"):
         prompt = message.content[4:]
         loading_message = await message.channel.send("***Generating response, please wait...***")
         response_lines = generate_response(prompt, 1)
@@ -118,7 +118,7 @@ def generate_response(prompt, temperature):
         message = completions.choices[0].text
     if '!code' in prompt:
         return message
-    elif '!cc' in prompt:
+    elif '!creativecode' in prompt:
         return message
     elif '!image' in prompt:
         return message
