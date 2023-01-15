@@ -1,4 +1,4 @@
-# ChatGPT Discord Bot <img src="https://github.com/acheong08/ChatGPT/blob/main/logo.png?raw=true" width="7%"></img>
+# ChatGPT Discord Bot
 
 A simple and portable ChatGPT Discord Bot in Python.
 
